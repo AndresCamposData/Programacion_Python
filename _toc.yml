@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Clases_Python
+- file: Lectura_1_Intro_Markdown
+- file: Lectura_2_elementos_basicos_Python
+- file: Lectura_3_Defi_Function_Python
+- file: Lectura_4_estruc_Datos_Python
