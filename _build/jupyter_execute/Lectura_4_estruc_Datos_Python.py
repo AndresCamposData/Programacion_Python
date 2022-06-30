@@ -174,19 +174,16 @@ print("-"*100)
 # 
 # 
 # 
-# ```python
+# ```Python
 # lst_anim = ['Perro', 'Gato', 'Pájaro', 'Conejo', 'Pez', 'Hamster', 'Tortuga']
 # ```
 # 
-# |lst_anim |\[| Perro | Gato | Pájaro | Conejo | Pez | Hamster | Tortuga | \]
+# | lst_anim |Perro | Gato  | Pájaro | Conejo | Pez   | Hamster | Tortuga |
+# | :---:    |:---: | :---: | :---:  |:---:   | :---: |  :---:  | :---:   | 
+# |índices  +|   0  |   1   |   2    |    3   |   4   |    5    |   6     |
+# |índices  -|  -7  |  -6   |  -5    |   -4   |  -3   |   -2    |  -1     |
 # 
-# |--- ||:---: | :---: | :---: | :---: | :---: | :---: | :---: | ---
-# 
-# |índices |+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |  |
-# 
-# |índices |-| -7 | -6 | -5 | -4 | -3 | -2 | -1 |  |
-# 
-# ```python
+# ```Python
 # # Elemento: 3, índice del elemento: 2.
 # print(lst_anim[2])
 # # Elemento: 4, índice del elemento: 3.
@@ -197,7 +194,7 @@ print("-"*100)
 # 
 # También puede modificar el valor de alguno de los elementos de la siguiente forma:
 # 
-# ```python
+# ```Python
 # # Modificando el elemento 4 que tiene por índice 3.
 # lst_anim[3] = 'Jirafa'
 # print(lst_anim)
@@ -823,9 +820,9 @@ get_ipython().run_cell_magic('time', '', 'prueba.count(0.0)\n')
 get_ipython().run_cell_magic('time', '', 'count_element(prueba,0.0)\n')
 
 
-# ---
+# 
 # # Ejercicio en clase
-# ---
+# 
 # 
 # ### Problema de las votaciones
 # 

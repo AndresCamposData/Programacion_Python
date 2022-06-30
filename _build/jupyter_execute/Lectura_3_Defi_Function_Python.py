@@ -456,17 +456,13 @@ concat("earth", "mars", "venus", ".")
 concat(sep=".","earth", "mars", "venus")
 
 
-# ---
-# 
 # ## Ejercicio en clase: __funciones__
-# 
-# ---
 # 
 # Construir una función de `Python` que pinte la curva Senosoidal, a partir de un intervalo dado de valores (xInicial, xFinal) y que devuelva los correspondientes valores pintados
 # 
 # _Antes de iniciar se deben importar las librerias:_
 # 
-# ```python
+# ```Python
 # import matplotlib.pyplot as plt
 # import numpy as np
 # ```
@@ -762,16 +758,14 @@ prom(5,4,1,2.5,6,7,8)
 print (tt.__doc__)
 
 
-# In[27]:
+# In[1]:
 
 
 import pandas as pd
-help(pd.DataFrame)
+# help(pd.DataFrame)
 
 
-# ---
 # ## 8. Crear nuevos parámetros en la función (**ejercicio fuera de clase**)
-# ---
 # 
 # Aumentar la capacidad de personalizar la gráfica de la función 'pintarSeno'  agregando parámetros opcionales que permitan configurar:
 # - Título de la gráfica 

@@ -42,6 +42,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -52,6 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introducción Libreria Pandas" href="Lectura_5_Pandas_Series_DataFrame.html" />
     <link rel="prev" title="Funciones en Python." href="Lectura_3_Defi_Function_Python.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -142,6 +144,46 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Estructuras de datos en python.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lectura_5_Pandas_Series_DataFrame.html">
+   Introducción Libreria
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Pandas
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lectura_6.0_Mas_de_Pandas.html">
+   Más sobre la libreria
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pandas
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lectura_6.1_operacionesB%C3%A1sicasDataframes.html">
+   Operaciones básicas con dataframes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lectura_7_CruceDatos_TratamientoInformaci%C3%B3n.html">
+   Tratamiento de datos.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lectura_12_Intro_Plotly.html">
+   Introducción a la librería
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Plotly
+    </span>
+   </code>
   </a>
  </li>
 </ul>
@@ -860,14 +902,43 @@ El elemento --&gt; datos, tiene índice en Python de 13 y es el elemento 14
 <section id="acceder-a-los-elementos-de-una-lista">
 <h3>1.2 <strong>Acceder a los elementos de una lista.</strong><a class="headerlink" href="#acceder-a-los-elementos-de-una-lista" title="Permalink to this headline">#</a></h3>
 <p>El acceso a los elementos de la lista se realiza a través de sus índices. En <code class="docutils literal notranslate"><span class="pre">Python</span></code> los índices de una lista van desde 0 hasta el tamaño de la lista -1. Por ejemplo de la siguiente lista se puede obtener acceso a los elementos 3, 4 y 6 de la siguiente forma:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lst_anim</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Perro&#39;</span><span class="p">,</span> <span class="s1">&#39;Gato&#39;</span><span class="p">,</span> <span class="s1">&#39;Pájaro&#39;</span><span class="p">,</span> <span class="s1">&#39;Conejo&#39;</span><span class="p">,</span> <span class="s1">&#39;Pez&#39;</span><span class="p">,</span> <span class="s1">&#39;Hamster&#39;</span><span class="p">,</span> <span class="s1">&#39;Tortuga&#39;</span><span class="p">]</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">lst_anim</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Perro&#39;</span><span class="p">,</span> <span class="s1">&#39;Gato&#39;</span><span class="p">,</span> <span class="s1">&#39;Pájaro&#39;</span><span class="p">,</span> <span class="s1">&#39;Conejo&#39;</span><span class="p">,</span> <span class="s1">&#39;Pez&#39;</span><span class="p">,</span> <span class="s1">&#39;Hamster&#39;</span><span class="p">,</span> <span class="s1">&#39;Tortuga&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>|lst_anim |[| Perro | Gato | Pájaro | Conejo | Pez | Hamster | Tortuga | ]</p>
-<p>|— ||:—: | :—: | :—: | :—: | :—: | :—: | :—: | —</p>
-<p>|índices |+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |  |</p>
-<p>|índices |-| -7 | -6 | -5 | -4 | -3 | -2 | -1 |  |</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Elemento: 3, índice del elemento: 2.</span>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>lst_anim</p></th>
+<th class="text-align:center head"><p>Perro</p></th>
+<th class="text-align:center head"><p>Gato</p></th>
+<th class="text-align:center head"><p>Pájaro</p></th>
+<th class="text-align:center head"><p>Conejo</p></th>
+<th class="text-align:center head"><p>Pez</p></th>
+<th class="text-align:center head"><p>Hamster</p></th>
+<th class="text-align:center head"><p>Tortuga</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>índices  +</p></td>
+<td class="text-align:center"><p>0</p></td>
+<td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>2</p></td>
+<td class="text-align:center"><p>3</p></td>
+<td class="text-align:center"><p>4</p></td>
+<td class="text-align:center"><p>5</p></td>
+<td class="text-align:center"><p>6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>índices  -</p></td>
+<td class="text-align:center"><p>-7</p></td>
+<td class="text-align:center"><p>-6</p></td>
+<td class="text-align:center"><p>-5</p></td>
+<td class="text-align:center"><p>-4</p></td>
+<td class="text-align:center"><p>-3</p></td>
+<td class="text-align:center"><p>-2</p></td>
+<td class="text-align:center"><p>-1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Elemento: 3, índice del elemento: 2.</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lst_anim</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 <span class="c1"># Elemento: 4, índice del elemento: 3.</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lst_anim</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
@@ -876,7 +947,7 @@ El elemento --&gt; datos, tiene índice en Python de 13 y es el elemento 14
 </pre></div>
 </div>
 <p>También puede modificar el valor de alguno de los elementos de la siguiente forma:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modificando el elemento 4 que tiene por índice 3.</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modificando el elemento 4 que tiene por índice 3.</span>
 <span class="n">lst_anim</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Jirafa&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lst_anim</span><span class="p">)</span>
 </pre></div>
@@ -1648,8 +1719,8 @@ Hamster
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
-CPU times: user 150 µs, sys: 16 µs, total: 166 µs
-Wall time: 177 µs
+CPU times: user 492 µs, sys: 56 µs, total: 548 µs
+Wall time: 481 µs
 </pre></div>
 </div>
 </div>
@@ -1665,8 +1736,8 @@ Wall time: 177 µs
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 19 µs, sys: 2 µs, total: 21 µs
-Wall time: 28.6 µs
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 20 µs, sys: 2 µs, total: 22 µs
+Wall time: 30 µs
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
@@ -1788,11 +1859,11 @@ Wall time: 28.6 µs
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 5.39 s, sys: 22.9 ms, total: 5.41 s
-Wall time: 5.41 s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 5.56 s, sys: 37.5 ms, total: 5.59 s
+Wall time: 5.6 s
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.0
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.0
 </pre></div>
 </div>
 </div>
@@ -1805,11 +1876,11 @@ Wall time: 5.41 s
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 654 ms, sys: 3.63 ms, total: 657 ms
-Wall time: 654 ms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 653 ms, sys: 7.48 ms, total: 661 ms
+Wall time: 657 ms
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>500631
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>500529
 </pre></div>
 </div>
 </div>
@@ -1822,11 +1893,11 @@ Wall time: 654 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 896 ms, sys: 0 ns, total: 896 ms
-Wall time: 895 ms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 913 ms, sys: 0 ns, total: 913 ms
+Wall time: 913 ms
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>500631
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>500529
 </pre></div>
 </div>
 </div>
@@ -1834,10 +1905,8 @@ Wall time: 895 ms
 </section>
 </section>
 </section>
-<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="ejercicio-en-clase">
 <h1>Ejercicio en clase<a class="headerlink" href="#ejercicio-en-clase" title="Permalink to this headline">#</a></h1>
-<hr class="docutils" />
 <section id="problema-de-las-votaciones">
 <h2>Problema de las votaciones<a class="headerlink" href="#problema-de-las-votaciones" title="Permalink to this headline">#</a></h2>
 <p>A continuación tenemos un diccionario con el nombre del candidato y el número que le corresponde. También, se tienen seis mesas de votación en donde se registra el voto por cada candidato usando el respectivo número. Cuando se registra cero, corresponde a votos en blanco. El objetivo es contar la votación de cada candidato para saber como proceder de acuerdo con las siguientes reglas:</p>
@@ -2134,6 +2203,13 @@ blanco 0
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Funciones en Python.</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="Lectura_5_Pandas_Series_DataFrame.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introducción Libreria <code class="docutils literal notranslate"><span class="pre">Pandas</span></code></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

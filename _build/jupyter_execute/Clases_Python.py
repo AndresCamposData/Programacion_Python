@@ -2,6 +2,8 @@
 # coding: utf-8
 
 # # Clases en `Python` (En construcción)
+# 
+# Esta es una temática que  no hace parte del curso, pero se desea incluir.
 
 # In[1]:
 

@@ -7,9 +7,8 @@
 #  - Introducción a los notebooks
 #  - Introducción al lenguaje de Markdown
 
-# ---
 # ## ¿Qué es Markdown?
-# ---
+# 
 # 
 # Markdown es un lenguaje de marcado ligero que puede usar para agregar elementos de formato a documentos de texto sin formato. Creado por John Gruber en 2004, Markdown es ahora uno de los lenguajes de marcado más populares del mundo.
 # 
@@ -25,9 +24,8 @@
 # 
 # 
 
-# ---
 # ## ¿Por qué usar Markdown?
-# ---
+# 
 # 
 # ¿Por qué escribir con Markdown cuando puede presionar botones en una interfaz para formatear su texto? Resulta que hay un par de razones diferentes por las que las personas usan Markdown en lugar de otros editores.
 # 
@@ -41,19 +39,9 @@
 # 
 # El descuento está en todas partes. Los sitios web como Reddit y GitHub son compatibles con Markdown, y muchas aplicaciones de escritorio y basadas en la web lo admiten.
 
-# ---
 # ## Desarrollo de la sesión
-# ---
 # 
 # A continuación se muestran diferentes ejemplos del uso del lenguaje de __markdown__ para los notebooks de `Python`. El ejercicio consiste en ingresar a cada celda en modo de edición (haciendo doble-clic) y revise cómo se escribe, cómo se ve y luego practique desarrollando sus propios ejemplos.
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
 
 # ## 1. Encabezados en celdas de texto:
 # Para crear un encabezado, agregue hashtag (#) adelante de una palabra o frase. El número de signos numéricos que utilice debe corresponder al nivel del encabezado. Por ejemplo, para crear un título de nivel tres  utilice tres signos numéricos (p. ej., ### Subtítulo).
@@ -83,7 +71,6 @@
 # Con código html
 # <h6>Título de sexto nivel<h6/>
 # ```
-# ---
 
 # ### 2. Realce de texto
 # 
@@ -133,8 +120,6 @@ suma(4,5)
 # 4. Podemos dejar el mismo número
 # 5. inserto nuevo elemento
 # 45. La lista sigue numerando automáticamente...
-# 
-# ---
 
 # ### 4. Sangría del párrafo
 # También tenemos la posibilidad de sangrar el texto cuando sea necesario
@@ -184,7 +169,7 @@ suma(4,5)
 # 
 # 
 # 
-# ```javascript
+# ```Javascript
 # // comentario javascript
 # if(x=1; x<10; x++){
 #   console.log("Hola mundo")  
@@ -192,7 +177,7 @@ suma(4,5)
 # ```
 # Este es otro bloque de código, por ejemplo para otra tarea:
 # 
-# ```python
+# ```Python
 # # comentario python
 # def minimun(A):
 #     A.sort()
@@ -200,7 +185,7 @@ suma(4,5)
 #     return a[0]
 # ```
 # 
-# ```json
+# ```Json
 # {
 #   "firstName": "John",
 #   "lastName": "Smith",
@@ -231,10 +216,16 @@ suma(4,5)
 # * Otros: \+ \- \. \! \: \
 # 
 # Para finalizar una línea de separación 
+# 
+# ```
 # ***
+# ```
+# 
 # También se puede hacer con guíones:
 # 
+# ```
 # ---
+# ```
 
 # ### 7. Use latex para las ecuaciones:
 # 
@@ -274,7 +265,7 @@ suma(4,5)
 # Siguiendo algunas convenciones simples, como se muestra en el siguiente ejemplo, puede generar tablas interesantes
 # 
 # Operación | Siginificado | Resultado
-# --- | :---: | ---:
+# |:--- | :---: | ---:
 # 5032 + 7624 + 365  | sumar valores | 13021
 # 18213 - 9567.5  | restar valores | 8645.5
 # 13.3 * 8.52  | multiplicación |  113.316
@@ -285,15 +276,12 @@ suma(4,5)
 # 13\*\*2 | Potenciación | 169
 # 
 # | h1 | h2 |
-# | --- | ---: |
+# | :---: | :---: |
 # | hola | mundo |
 # 
 #  columna 1 | columna 2 | columna 3
-#  --- | ---: | :---:
+#  :--- | ---: | :---:
 #  1 | 2| $x_i$
-# 
-# 
-# ***
 
 # ### 9. Tarea de buscar y practicar
 # - Inserte una imagen
@@ -307,7 +295,6 @@ suma(4,5)
 # 1. [markdown](https://markdown-it.github.io/)
 # 2. [colab getting started](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 
-# ---
-# ## Créditos
-# ---
+# ## _Créditos_
+# 
 # [Markdown guide.](https://www.markdownguide.org/getting-started/)

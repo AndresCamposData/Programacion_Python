@@ -4,7 +4,6 @@
 # # Introducción a Python - elementos básicos del lenguaje
 
 # ## Metodología
-# ---
 # 
 # Para iniciar en programación se deben aprender algunos conceptos básicos como son los pilares del pensamiento computacional, y para codificar conceptos como: variables, expresiones, condicionales, ciclos, entre otros. Sin embargo, la habilidad de programar para resolver problemas se adquiere mediante la práctica constante. 
 # - La experiencia en la solución de diferentes problemas es un factor fundamental que ayuda a la solución de otros problemas que son parecidos o un poco más complejos. Es decir, que aprender a programar es incremental y se puede realizar mediante el entendimiento de ejemplos. 
@@ -18,7 +17,7 @@
 # * Cuando tenga dificultades, primero siempre trate de solucionarlas usted mismo, para esto, repase material conocido (por tanto es importante mantener el material organizado incluso el que consigue por sus propios medios). Si no logró resolver sus dificultades busque ayuda en compañeros, monitor y/o profesor. Se recomienda que no aplace la solución a sus inquietudes.
 
 # ## **Elementos básicos de Python.**
-# ---
+# 
 # 
 # Este tutorial esta escrito en un **Notebook** de *Python*. El notebook es proporcionado por Anaconda usando un módulo llamado *Jupyter* o por *Google Drive* mediante una aplicación llamada **Colaboratory**. El  **Notebook** tiene tres componentes CODE, TEXT y OUTPUT. 
 # * CODE: espacio para escribir un programa usando el lenguaje de python
@@ -34,7 +33,7 @@
 # Para escribir las instrucciones en Python, genere un espacio de código y escriba la operación. Tenga en cuenta que los operadores requieren un orden y en general deben tener dos valores a cada lado. Por ejemplo:
 # 
 # Operación | Siginificado | Resultado
-# --- | --- | ---
+# :---: | :---: | :---:
 # 5032 + 7624 + 365  | sumar valores | 13021
 # 18213 - 9567.5  | restar valores | 8645.5
 # 13.3 * 8.52  | multiplicación |  113.316
@@ -159,7 +158,7 @@ Z
 
 
 # ## Imprimir en Python
-# ---
+# 
 # Es posible que haya notado que el notebook automaticamente imprime la última operación o la variable que se escriba en la línea final. Pero si se quiere imprimir varias veces en un segmento de código se puede usar la función __print__ o la función __display__. 
 # 
 # Observe las diferentes formas de imrpimir con la función __print__:
@@ -208,11 +207,10 @@ print(f'Tabla de valores\n a = {a}\n b = {b}\n c = {c}\n d = {d}')
 
 
 # ### Precedencia de operadores
-# ---
 # 
 # No todos los operadores tienen la misma jerarquía. La multiplicación, división, módulo y división entera tienen el mismo nivel de precedencia, al igual que la suma y la resta. Pero estos últimos tienen menor precedencia sobre los primeros. Es decir, por ejemplo, que primero es la multiplicación sobre la suma:
 # 
-# ```python
+# ```Python
 # # No es lo mismo
 # a = 2
 # b = 3
@@ -237,8 +235,8 @@ print(a * (b + c))
 
 
 # ### Probar el nivel de precedencia de la potencia
-# ---
-# ```python
+# 
+# ```Python
 # x = 3
 # y = 2
 # z = 5
@@ -260,9 +258,8 @@ print((x**y)*z, x**(y*z), (z/x)**y, z/(x**y))
 
 
 # ## **3. Tipos de datos.**
-# ---
 # 
-#  Los tipos de datos básicos que se pueden identificar en un programa son:
+# Los tipos de datos básicos que se pueden identificar en un programa son:
 # * Numéricos: (valores enteros o que pertenecen a los números reales).
 # * Lógicos (Son aquellos que pueden tomar por valor solamente __verdadero__ o __falso__).
 # * Caracter (Caracter o cadena de caracteres).
@@ -307,12 +304,11 @@ print(f)
 
 
 # ### Capturar valores de entrada:
-# ---
 # 
 # Resulta muy útil interactuar con el usuario del programa para que este sea más flexible. Una forma es pedirle que ingrese valores por la consola de texto usando la función __input__:
 # 
 # 
-# ```python
+# ```Python
 # # leer de la consola y guardar en la variable valor
 # valor = input('Ingrese un valor entero positivo:')
 # # imprimir el tipo que recibe y el valor
@@ -366,9 +362,9 @@ print('area = ', area)
 
 
 # ### manejo de strings
-# ---
 # 
-# ```python
+# 
+# ```Python
 # # Caracter
 # c = 'a'
 # print(type(c))
@@ -413,9 +409,9 @@ print(type(cna_caracteres))
 
 
 # ### Otras opciones con strings
-# ---
 # 
-# ```python
+# 
+# ```Python
 # # longitud de cadena de caracteres contando espacios
 # long_cnd = len(cna_caracteres)
 # print(long_cnd)
@@ -524,12 +520,12 @@ print('valor de ctr: ', ctr)
 # En Python como en otros lengujes se pueden hacer evaluaciones lógicas entre variables. Se debe recordar el funcionamiento de las tablas de verdad. A continuación se mencionan como ejemplo las tablas de verdad con los diferentes operadores lógicos de conjunción, disyunción y negación.
 # 
 # a | no a ¬(a)
-# --- | ---
+# :---: | :---:
 #  verdadero (V) | Falso (F)
 #  falso (F) | verdadero (V)
 # 
 # a | b | a y b | a o b | 
-# --- | --- | --- | ---
+# :---: | :---: | :---: | :---:
 #  verdadero (V) | verdadero (V)  | verdadero (V) |  verdadero (V)
 #  verdadero (V) | falso (F) | falso (F) | verdadero (V)
 #  falso (F) | verdadero (V) | falso (F) | verdadero (V)
@@ -541,7 +537,7 @@ print('valor de ctr: ', ctr)
 # 
 # 
 # Operador lógico | Expresión lógica | Significado
-# --- | --- | ---
+# :---: | :---: | :---:
 # not (not), !  | no p (not p) | negación de p
 # y (and), & | p y q (p and q) | conjunción de p y q
 # o (o), $|$  | p o q (p o q) | disyunción de p y q
@@ -549,7 +545,7 @@ print('valor de ctr: ', ctr)
 #  Al final de cada linea imprima si es una conjunción o disyunción.
 # 
 # 
-# ```python
+# ```Python
 # # Evaluar falso y verdadero
 # print(f and v)
 # # Evaluar falso o verdaero
@@ -602,9 +598,8 @@ print(8 <= 5)
 print(5 != 5)
 
 
-# 
 # ## **4. Entrada, proceso y salida.**
-# ---
+# 
 # 
 # Recordando la estructura de un algoritmo, este se encuentra divido de forma general en tres partes: Entrada, Proceso y Salida. Como ejemplo, en un algoritmo que soluciona una receta de cocina se infiere que esta tendrá:
 # 
@@ -820,7 +815,6 @@ else:
 # Puede ampliar sus conocimientos alrededor de las estructuras condicionales en el siguiente link: [Conditional Statements in Python](https://realpython.com/python-conditional-statements/)
 
 # ## **6. Estructuras cíclicas**
-# ---
 # 
 # La estructura ciclica (también llamadas estructura con bucle o repeticiones)  permiten que se ejecute repetidamente un conjunto de instrucciones, bien sea bajo un número pre-determinado de veces o hasta que se verifique y se cumpla una determinada condición.
 # 
@@ -828,7 +822,7 @@ else:
 # 
 # El **ciclo for** tiene la siguiente estructura:
 # 
-# ```python
+# ```Python
 # for <variable> in range(<inicio>, <fin>, <incremento>):
 #        <instrucciones...>    
 # ```
@@ -849,7 +843,7 @@ else:
 #   2.  Configurar un ciclo de 1 a 10.
 #   3.  Imprimir cada línea de la tabla .
 # 
-# ```python
+# ```Python
 # x = int(input('Ingrese un valor en el intervalo [2,10]: '))
 # for y in range(1,11):  
 #   print(x, 'x', y, '=', x*y)  
@@ -1004,11 +998,7 @@ while (year<2000) or (year>2020):
   year = int(input("Error: Ingrese un año válido: "))
 
 
-# ---
-# 
 # ## Ejercicio:
-# 
-# ---
 # 
 # En un determinado programa se ingresan 3 valores que corresponden a día, mes y año. Dados estos 3 valores el programa debe verificar si la fecha que conforman estos tres números es válida o no. Para ser válida se debe verificar que la fecha esté entre 1 de enero de 2000 y el 31 de diciembre de 2020. Al final convierta el programa en una función llamada: validar_fecha(dia, mes, año).
 # 
@@ -1068,11 +1058,7 @@ for i in range(2000,2021,1):
   print(f'{i%4}')
 
 
-# ---
-# 
 # ## Problemas a resolver:
-# 
-# ---
 # 
 # Los siguientes ejercicios tienen como objetivo prácticar la elaboración de algoritmos para resolver los problemas propuestos. Intente realizarlos sin buscar la solución en internet. El segundo punto esta diseñado para resolverlo de manera incremental.
 # 
