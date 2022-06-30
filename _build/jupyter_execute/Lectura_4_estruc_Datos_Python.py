@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Estructuras de datos en python
+# # Estructuras de datos en python.
 # 
 # 
 # **Temas:**

@@ -2,8 +2,6 @@
 # coding: utf-8
 
 # # Clases en `Python` (En construcción)
-# 
-# ---
 
 # In[1]:
 

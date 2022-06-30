@@ -2,7 +2,6 @@
 # coding: utf-8
 
 # # Introducción a Python - elementos básicos del lenguaje
-# ---
 
 # ## Metodología
 # ---

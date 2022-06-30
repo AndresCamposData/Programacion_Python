@@ -3,10 +3,6 @@
 
 # # Introducción a los notebooks y al lenguaje Markdown
 # 
-# **Facultad de Ingeniería y Ciencias Básicas.**
-# 
-# **Universidad Central  2022 - I**
-# 
 #  **Temas:**
 #  - Introducción a los notebooks
 #  - Introducción al lenguaje de Markdown
